@@ -218,8 +218,9 @@ class _DashBoardHomeState extends State<DashBoardHome> {
                 ),
                 YMargin(height: 50),
                 Card(
+                  elevation: 0,
                   child: Padding(
-                    padding: const EdgeInsets.all(12.0),
+                    padding: const EdgeInsets.all(20.0),
                     child: Row(
                       children: [
                         CircleAvatar(radius: 20),
@@ -230,6 +231,62 @@ class _DashBoardHomeState extends State<DashBoardHome> {
                             children: [
                               Text(
                                 "Transfer to chidi obi,",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                              YMargin(height: 4),
+                              Text(
+                                "sent,",
+                                style: TextStyle(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.w300,
+                                  color: Color(0xffAC8BD3),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Column(
+                          children: [
+                            Text(
+                              "-N150,000,",
+                              style: TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w400,
+                              ),
+                            ),
+                            YMargin(height: 4),
+                            Text(
+                              "Aug 12, 2020",
+                              style: TextStyle(
+                                fontSize: 10,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xffAC8BD3),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                YMargin(height: 10),
+                Card(
+                  elevation: 0,
+                  child: Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Row(
+                      children: [
+                        CircleAvatar(radius: 20),
+                        XMargin(width: 20),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Bank Transfer,",
                                 style: TextStyle(
                                   fontSize: 12,
                                   fontWeight: FontWeight.w500,
